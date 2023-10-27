@@ -1,0 +1,264 @@
+.container{
+    position: relative;
+
+    .form-page{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        outline: none;
+        padding: 12px;
+        background: #fff;
+
+        .header{
+            position: relative;
+            display: flex;
+            height: 64px;
+            flex-shrink: 0;
+            justify-content: space-between;
+
+            .name{
+                position: relative;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                font-size: 22px;
+            }
+
+            .logo{
+                position: relative;
+
+                img{
+                    width: 220px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .base-info{
+            position: relative;
+
+            .row{
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin: 12px 0;
+
+                .label{
+                    position: relative;
+                    padding-right: 6px;
+                    display: flex;
+                    width: 80px;
+                    flex-shrink: 0;
+                }
+
+                .input{
+                    position: relative;
+                    display: flex;
+                    flex-grow: 1;
+
+                    .custom-option{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+
+        .body{
+            position: relative;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            padding-top: 12px;
+
+            :global .ant-card{
+                margin-bottom: 12px;
+
+                .ant-card-body{
+                    padding: 12px;
+                }
+            }
+
+            .item{
+                position: relative;
+
+                :global .ant-select-selector{
+                    padding: 0;
+                }
+
+                .opt{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    z-index: 10;
+                }
+                .name{
+                    position: relative;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                .body{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+
+                    .img{
+                        width: 60px;
+                        display: flex;
+                        flex-shrink: 0;
+                        align-items: center;
+                        background-color: #f5faff;
+                        padding: 2px;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .content{
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        margin-left: 12px;
+
+                        .brand{
+                            position: relative;
+                            width: 100%;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+
+                        .gg{
+                            position: relative;
+                            width: 100%;
+                            font-size: 14px;
+                        }
+
+                        .pc{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 12px;
+
+                            .price{
+                                position: relative;
+                                color: #000;
+                                display: flex;
+                                align-items: center;
+
+                                svg{
+                                    fill: red;
+                                }
+                            }
+
+                            .count{
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+
+                                .number-input{
+                                    position: relative;
+                                    // border: 1px solid #ccc;
+                                    display: flex;
+                                    width: 110px;
+                                    align-items: center;
+
+                                    span{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 25px;
+                                        flex-shrink: 0;
+                                        cursor: pointer;
+                                    }
+
+                                    input{
+                                        background-color: #E7EBEE;
+                                        border-radius: 2px;
+                                        font-size: 12px;
+                                        padding: 4px;
+                                    }
+                                }
+
+                                &>span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .remark, .o-info, .other{
+                position: relative;
+                border: 1px solid #E7EBEE;
+                margin-top: 50px;
+                text-align: left;
+                border-collapse: collapse;
+
+                th{
+                    padding: 6px 10px;
+                }
+                td{
+                    border-top: 1px solid #E7EBEE;
+
+                    textarea{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .o-info{
+                td{
+                    padding: 6px 10px;
+                    cursor: text;
+                }
+
+                p{
+                    margin: 5px 0;
+                    font-size: 12px;
+                }
+
+                img{
+                    height: 100px;
+                }
+            }
+
+            .submit{
+                position: relative;
+                text-align: center;
+                margin: 50px 0;
+
+                button{
+                    margin: 0 12px;
+                }
+            }
+        }
+
+        .footer{
+            display: flex;
+            height: 32px;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+
+            span{
+                padding: 0 12px;
+            }
+        }
+    }
+
+    :global .ant-input-disabled{
+        border: none;
+        background-color: unset;
+    }
+}

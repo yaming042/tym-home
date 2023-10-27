@@ -1,0 +1,114 @@
+.container{
+    position: relative;
+    background-color: #0AC266;
+    color: #fff;
+
+    footer {
+        padding: 35px 0;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1280px;
+        width: 90%;
+        margin: 0 auto;
+
+        :global .row-menu{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            .item{
+                position: relative;
+
+                &:nth-of-type(1){width: 20%;}
+                &:nth-of-type(2){width: 24%;}
+                &:nth-of-type(3){
+                    width: 56%;
+                    overflow: hidden;
+
+                    .footer-title{
+                        margin-bottom: 0;
+                    }
+
+                    .footer-us-title{
+                        margin-top: 24px;
+                    }
+                }
+
+                .ul{
+                    display: flex;
+
+                    ul{
+                        width: 40%;
+
+                        li{
+                            padding: 4px 0;
+                        }
+                    }
+                }
+
+                .footer-title {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+
+                .footer-subtitle {
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 12px;
+                    font-weight: 400;
+                    margin-bottom: 6px;
+                }
+
+                .addr{
+                    position: relative;
+                    float: left;
+
+                    &:nth-of-type(1){
+                        margin-right: 30px;
+                    }
+
+                    .footer-us-title {
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: 400;
+                        padding: 4px 0;
+                        margin-bottom: 12px;
+                    }
+
+                    li{
+                        font-size: 12px;
+                        line-height: 22px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        :global .row{
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 60px;
+
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 30px;
+                height: 2px;
+                width: 100%;
+                border-top: 1px solid #fff;
+            }
+        }
+    }
+}

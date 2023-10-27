@@ -1,0 +1,43 @@
+.dialog{
+    :global .ant-card{
+        margin-bottom: 24px;
+    }
+
+    :global .ant-row{
+        font-weight: 500;
+        margin: 6px 0;
+
+        label{
+            font-weight: 400;
+            color: #666;
+        }
+
+        &.__row{
+            position: relative;
+
+            label{
+                width: 70px;
+            }
+
+            .ant-col{
+                display: flex;
+                align-items: flex-start;
+
+                img{
+                    width: 100%;
+                }
+
+                a{
+                    display: flex;
+                    width: 90px;
+                    height: 90px;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 48px;
+                    border: 1px solid #f3f3f3;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#__next{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: unset;
+    color: #253843;
+}
+
+
+.web-container{
+    padding-top: 58px;
+    min-height: calc(100% - 300px);
+}
+
+.qt-btn{
+    background-color: #0e6aed;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    display: inline-block;
+}
+

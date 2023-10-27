@@ -1,0 +1,30 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .form{
+        position: relative;
+
+        :global .ant-form-item{
+            margin: 6px 12px 6px 0;
+
+            .ant-select{
+                min-width: 180px;
+            }
+        }
+    }
+
+    .submit{
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+
+        button:not(:last-child){
+            margin-right: 12px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.container{
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    pointer-events: none;
+
+    .drawer-mask{
+        position: absolute;
+        inset: 0;
+        z-index: 997;
+        background: rgba(0, 0, 0, 0.45);
+        pointer-events: auto;
+    }
+
+    .drawer-content{
+        position: relative;
+        z-index: 998;
+        transition: all 0.3s;
+        box-shadow: -6px 0 16px 0 rgba(0, 0, 0, 0.08), -3px 0 6px -4px rgba(0, 0, 0, 0.12), -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .drawer-body{
+            width: 100%;
+            overflow: auto;
+            background: #ffffff;
+            pointer-events: auto;
+            border-radius: 8px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.title{
+    display: none;
+}
+.impowerBox .qrcode{
+    width: 100px;
+}
+
+.impowerBox .status{
+    font-size: 12px;
+}
+.impowerBox .status.status_fail{
+    color: red;
+}
+.impowerBox .status.status_succ{
+    color: #000;
+}
+.impowerBox .status_txt p{
+    font-size: 12px;
+}
+.impowerBox .icon38_msg{
+    width: 24px;
+    height: 24px;
+}
+
+.weui_msg .weui_icon_area{
+    margin-bottom: 0;
+}
+.weui_icon_info:before{
+    font-size: 64px;
+}
+.weui_msg .weui_msg_title{
+    font-size: 12px;
+}
+
+.impowerBox .qrcode {width: 200px;}
+.impowerBox .title {display: none;}
+.impowerBox .info {width: 200px;}
+.status_icon {display: none}
+.impowerBox .status {text-align: center;}

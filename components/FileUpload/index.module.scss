@@ -1,0 +1,65 @@
+.container{
+    position: relative;
+    padding: 0 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+
+    input{
+        font-size: 12px;
+    }
+
+    .label{
+        position: relative;
+        display: flex;
+        max-width: 70px;
+        word-break: keep-all;
+    }
+
+    .field{
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    input{
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    &.time-range{
+        position: relative;
+
+        .field{
+            position: relative;
+
+            .date-picker{
+                position: relative;
+
+                :global .el-input{
+                    width: 100%;
+
+                    .el-icon-date{
+                        top: -1px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &.normal-input{
+        position: relative;
+    }
+
+    &.normal-select{
+        position: relative;
+
+        :global .el-select{
+            width: 100%;
+        }
+    }
+}

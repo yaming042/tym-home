@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+
+    .tree{
+        padding: 12px 0;
+
+        :global .ant-tree-treenode{
+            height: 36px;
+            padding: 0;
+
+            .ant-tree-switcher{
+                line-height: 36px;
+            }
+
+            .ant-tree-node-content-wrapper{
+                line-height: 36px;
+            }
+
+            &:hover:before {
+                bottom: 0;
+            }
+        }
+
+        :global .ant-tree-treenode-selected::before{
+            bottom: 0;
+        }
+    }
+
+    :global .site-tree-search-value {
+        color: #f50;
+    }
+}
+
